@@ -1,0 +1,15 @@
+h1 
+  = "The title of this article is "
+  mark = @article.title
+
+p 
+  = "And the text is "
+  mark = @article.text
+      
+br
+      
+= link_to "Back to index page", articles_path
+
+br
+
+= link_to "Edit article", edit_article_path(@article)

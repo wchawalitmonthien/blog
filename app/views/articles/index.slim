@@ -1,0 +1,21 @@
+table
+  thead
+    tr
+      th #
+      th Title
+      th Text 
+      th Links
+  tbody
+    - @articles.each_with_index do |a, i|
+      tr
+        td = i
+        td = a.title
+        td = a.text
+        td
+          = link_to "View Detail", article_path(a)
+          br
+          = link_to "Edit", edit_article_path(a)
+        
+br  
+
+= link_to "Create new article", new_article_path
