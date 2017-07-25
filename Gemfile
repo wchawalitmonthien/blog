@@ -54,3 +54,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Self-imported Gems
 gem 'slim-rails'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem "autoprefixer-rails"
